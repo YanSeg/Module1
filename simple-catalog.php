@@ -24,7 +24,9 @@ $lesproduits = [
 ]
 ];
 
+echo '<pre>';
 print_r ($lesproduits);
+echo '</pre>';
 ?>
 
 </br>
