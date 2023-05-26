@@ -40,20 +40,20 @@ $lesproduits = [
 
 
 <div>
-    <h3><?php print_r($lesproduits[0]['nom']) ?></h3>
-    <p>Prix : <?php print_r($lesproduits[0]['prix']) ?></p>
+    <h3><?php echo $lesproduits[0]['nom'] ?></h3>
+    <p>Prix : <?php echo $lesproduits[0]['prix'] ?></p>
     <img src="<?php echo $lesproduits[0]['image'] ?>">
 </div>
 
 <div>
-    <h3><?php print_r($lesproduits[1]['nom']) ?></h3>
-    <p>Prix : <?php print_r($lesproduits[1]['prix']) ?></p>
+    <h3><?php echo $lesproduits[1]['nom'] ?></h3>
+    <p>Prix : <?php echo $lesproduits[1]['prix'] ?></p>
     <img src="<?php echo $lesproduits[1]['image'] ?>">
 </div>
 
 <div>
-    <h3><?php print_r($lesproduits[2]['nom']) ?></h3>
-    <p>Prix : <?php print_r($lesproduits[2]['prix']) ?></p>
+    <h3><?php echo $lesproduits[2]['nom']?></h3>
+    <p>Prix : <?php echo $lesproduits[2]['prix'] ?></p>
     <img src="<?php echo $lesproduits[2]['image'] ?>">
 </div>
 
