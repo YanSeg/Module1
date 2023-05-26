@@ -1,6 +1,7 @@
 <?php 
-$lesproduits = [
 
+
+$lesproduits = [
 [
     'nom'=> "Dog",
     'prix'=> 300,
