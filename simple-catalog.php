@@ -1,62 +1,36 @@
+
 <?php
 
-include  "my-functions.php"; 
+include  "template/header.php";
 
-$lesproduits = [
-    [
-        'nom' => "Dog",
-        'prix' => 300,
-        'image' => "https://cdn.pixabay.com/photo/2023/05/21/12/40/dog-8008483_1280.jpg"
-    ],
-
-    [
+$products = ["Chien", "Coccinelle", "Cat"];
 
 
-        'nom' => "dog",
-        'prix' => 300,
-        'image' => "https://cdn.pixabay.com/photo/2023/05/21/12/40/dog-8008483_1280.jpg"
-
-    ],
-
-    [
-        'nom' => "chat",
-        'prix' => 300,
-        'image' => "https://cdn.pixabay.com/photo/2023/05/23/15/26/bengal-cat-8012976_1280.jpg"
-
-    ]
-];
-
-echo '<pre>';
-print_r($lesproduits);
-echo '</pre>';
+sort($products)  ."<br>";
+print_r($products) . "<br>";
 ?>
 
-</br>
+<br>
+<br>
 
 <?php
+foreach ($products as $ligne){
+    echo $ligne . "  ";
 
-foreach ($lesproduits  as $colonne) {
-    foreach ($colonne as $key => $value) {
-echo $key . "   " . $value . "<br>"; 
-    }
-
-    
 }
 
-
 ?>
 
+<br>
+<br>
 
-</br>
+
 <?php
 
-$Try = ["l", "p", "m", "k", "z"];
-sort($Try);
-print_r($Try);
+echo $products[0] . "<br>";
 
+echo $products[count($products) -1]. "<br>";
 
-print_r($Try[0]);
+include  "template/footer.php";
 
-
-print_r($Try[4]);
 ?>
