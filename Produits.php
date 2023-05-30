@@ -1,4 +1,7 @@
 <?php 
+
+include  "my-functions.php"; 
+
 $lesproduits = [
 
 [
@@ -60,13 +63,21 @@ for ($nbligne=0; $nbligne<10; $nbligne++ ) {
 }
 
 
+$i =0;
+do { 
+    echo $i . ' ' . "<br>";
+    $i++ ;
+} while ($i <5);
+
+
 $lettreAlphabet = ["a","b","c","d","e","f","g","h","i","j"];
 
 for ($i =0;$i<count($lettreAlphabet); $i=$i+1)
 {
-    echo '-' .  $lettreAlphabet[$i] . "\n";
+    echo '-' .  $lettreAlphabet[$i] . "<br>";
    
 }
 
-
 ?>
+
+
