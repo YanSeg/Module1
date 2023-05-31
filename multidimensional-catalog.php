@@ -11,7 +11,7 @@ $lesproduits = [
         'nom' => "Dog",
         'prixTTC' => 30000,
         'weight' => 3000,
-        'Remise' => 300,
+        'remise' => 300,
         'image' => "http://localhost/Module1/image/dog.png"
     ],
 
@@ -21,7 +21,7 @@ $lesproduits = [
         'nom' => "cocinelle",
         'prixTTC' => 3000,
         'weight' => 3,
-        'Remise' => 30,
+        'remise' => 30,
         'image' => "http://localhost/Module1/image/coci.png"
 
     ],
@@ -30,7 +30,7 @@ $lesproduits = [
         'nom' => "chat",
         'prixTTC' => 30000,
         'weight' => 1000,
-        'Remise' => 300,
+        'remise' => 300,
         'image' => "http://localhost/Module1/image/cat.png"
 
     ]
@@ -44,7 +44,7 @@ foreach ($lesproduits as $produit) : ?>
         <h3><?php echo $produit['nom'] ?></h3>
         <p> Prix initiale HT: <?php echo formatPrice(priceExcludingVAT($produit['prixTTC'])) ?> </p>
         <p>Prix initiale TTC : <?php echo formatPrice($produit['prixTTC']) ?></p>
-        <p>Prix Final après remise : <?php echo  formatPrice(discountedPrice($table['prixTTC'], $table['remise'])) ?> </p>
+        <p>Prix Final après remise : <?php echo  formatPrice(discountedPrice($produit['prixTTC'], $produit['remise'])) ?> </p>
         <img src="<?php echo $produit['image'] ?>">
     </div>
 <?php endforeach;
